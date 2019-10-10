@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<!--- Basic Page Needs
+		================================================== -->
+		<meta charset="utf-8">
+		<title>Система управления освещения</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+	<!-- Mobile Specific Metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- CSS
+		================================================== -->
+		<link rel="stylesheet" href="assets/css/default.css">
+		<link rel="stylesheet" href="assets/css/layout.css">
+		<link rel="stylesheet" href="assets/css/media-queries.css">
+	<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="favicon.ico" >
+		<style>
+
+		</style>
+	</head>
+	<body>
+
+   <!-- Header
+   	================================================== -->
+   	<header>
+   		<div class="row">
+   			<div class="twelve columns">
+   				<div class="logo">
+   					<h2 style="color:white" >Система управления освещения</h2>			
+   				</div>
+   				<div style='position: absolute; right: 10px; top: 10px;'>
+   					<h6 style='color: white'>Вход</h6>
+   				</div>          
+   			</div>
+   		</div>
+   	</header> 
+   	<!-- Header End -->
+
+   	<section id="info">
+   		<div class="row">
+   			<div class="twelve columns">
+   				<div  style='position: absolute; left: 10px; top: -50px; color: black;'>
+   					<img src="assets/images/logo-miet.svg" style="height: 50px" />	
+   				</div>
+   				<div style='position: absolute; right: 10px; top: -50px; color: black;'>
+   					<span id='date'>12:00:41 17.05.12</span>
+   				</div>          
+   			</div>
+   		</div>
+   		<hr style="border-top:1px solid grey; opacity: 0.6;">
+   		<div class="row">
+   			<div style="text-align:center;">
+   				<h3>Управление</h3>
+   			</div>		
+
+   			<div class="six" style="border:1px solid rgb(128,128,128); float:left; padding-left:10px;">
+   				<h5>ГРУПП 1</h5>
+   				<div style="width: 50%; float:left">			
+   					<div class="material-switch" >
+   						<span>1. Вкл. / Выкл.</span>
+   						<input id="g1el1" name="g1el1" type="checkbox" style="margin-left:30px;" />
+   						<label for="g1el1" class="label-default"></label>
+   					</div>
+   					<div class="slidecontainer" style="margin-top:30px;">					
+   						<span>&emsp;яркость</span>
+   						<input type="range" min="10" max="100" value="0" class="slider" id="g1el1r" style="width:90%">
+   					</div>				
+   				</div>
+   				<div style="width: 50%; float:left; display:inline-table; text-align:center; height:126px;">
+   					<span style="display:table-cell; vertical-align:middle">
+   						<img id='p1el1' src="assets/images/lamp/lampa.png" alt="Электро-лампа" width="68"  />
+   					</span>
+   				</div>
+   				<hr width="100%" />
+
+   				<div style="width: 50%; float:left">			
+   					<div class="material-switch" >
+   						<span>2. Вкл. / Выкл.</span>
+   						<input id="g1el2" name="g1el2" type="checkbox" style="margin-left:30px;" />
+   						<label for="g1el2" class="label-default"></label>
+   					</div>
+   					<div class="slidecontainer" style="margin-top:30px;">					
+   						<span>&emsp;яркость</span>
+   						<input type="range" min="10" max="100" value="0" class="slider" id="g1el2r" style="width:90%">
+   					</div>				
+   				</div>
+   				<div style="width: 50%; float:left; display:inline-table; text-align:center; height:126px;">
+   					<span style="display:table-cell; vertical-align:middle">
+   						<img id='p1el2' src="assets/images/lamp/lampa-red.png" alt="Электро-лампа" width="68"  />
+   					</span>
+   				</div>
+   				<hr width="100%" />
+
+   				<div style="width: 50%; float:left">			
+   					<div class="material-switch" >
+   						<span>Все Вкл. / Выкл.</span>
+   						<input id="g1el3" name="g1el3" type="checkbox" style="margin-left:30px;" />
+   						<label for="g1el3" class="label-default"></label>
+   					</div>
+   					<div class="slidecontainer" style="margin-top:30px;">					
+   						<span>&emsp;яркость</span>
+   						<input type="range" min="10" max="100" value="0" class="slider" id="g1el3r" style="width:90%">
+   					</div>				
+   				</div>
+   				<div style="width: 50%; float:left; display:inline-table; text-align:center; height:126px;">
+   					<span style="display:table-cell; vertical-align:middle">
+   						<img id='p1el3' src="assets/images/lamp/lampa.png" alt="Электро-лампа" width="68"  />
+   					</span>
+   				</div>	  
+   			</div>
+
+   			<div class="six" style="border:1px solid rgb(128,128,128); float:left; padding-left:10px;">
+   				<h5>ГРУПП 2</h5>
+   				<div style="width: 50%; float:left">			
+   					<div class="material-switch" >
+   						<span>1. Вкл. / Выкл.</span>
+   						<input id="g2el1" name="g2el1" type="checkbox" style="margin-left:30px;" />
+   						<label for="g2el1" class="label-default"></label>
+   					</div>
+   					<div class="slidecontainer" style="margin-top:30px;">					
+   						<span>&emsp;яркость</span>
+   						<input type="range" min="10" max="100" value="0" class="slider" id="g2el1r" style="width:90%">
+   					</div>				
+   				</div>
+   				<div style="width: 50%; float:left; display:inline-table; text-align:center; height:126px;">
+   					<span style="display:table-cell; vertical-align:middle">
+   						<img id="p2el1" src="assets/images/lamp/lampa.png" alt="Электро-лампа" width="68"  />
+   					</span>
+   				</div>
+   				<hr width="100%" />
+
+   				<div style="width: 50%; float:left">			
+   					<div class="material-switch" >
+   						<span>2. Вкл. / Выкл.</span>
+   						<input id="g2el2" name="g2el2" type="checkbox" style="margin-left:30px;" />
+   						<label for="g2el2" class="label-default"></label>
+   					</div>
+   					<div class="slidecontainer" style="margin-top:30px;">					
+   						<span>&emsp;яркость</span>
+   						<input type="range" min="10" max="100" value="0" class="slider" id="g2el2r" style="width:90%">
+   					</div>				
+   				</div>
+   				<div style="width: 50%; float:left; display:inline-table; text-align:center; height:126px;">
+   					<span style="display:table-cell; vertical-align:middle">
+   						<img id="p2el2" src="assets/images/lamp/lampa.png" alt="Электро-лампа" width="68"  />
+   					</span>
+   				</div>
+   				<hr width="100%" />
+
+   				<div style="width: 50%; float:left">			
+   					<div class="material-switch" >
+   						<span>Все Вкл. / Выкл.</span>
+   						<input id="g2el3" name="g2el3" type="checkbox" style="margin-left:30px;" />
+   						<label for="g2el3" class="label-default"></label>
+   					</div>
+   					<div class="slidecontainer" style="margin-top:30px;">					
+   						<span>&emsp;яркость</span>
+   						<input type="range" min="10" max="100" value="0" class="slider" id="g2el3r" style="width:90%">
+   					</div>				
+   				</div>
+   				<div style="width: 50%; float:left; display:inline-table; text-align:center; height:126px;">
+   					<span style="display:table-cell; vertical-align:middle">
+   						<img id="p2el3" src="assets/images/lamp/lampa.png" alt="Электро-лампа" width="68"  />
+   					</span>
+   				</div>	  
+
+   			</div>
+   			<div class="material-switch" >
+   				<h5>Общее освещение Вкл. / Выкл.</h5>
+   				<input id="allgroup" name="allgroup" type="checkbox" style="margin-left:130px;" />
+   				<label for="allgroup" class="label-default"></label>
+   			</div>		
+   			<div class="slidecontainer" style="margin-top:30px;">					
+   				<span>&emsp;яркость</span><br>
+   				<input type="range" min="10" max="100" value="0" class="slider" id="allgroupr" style="width:15%">
+   			</div>	     
+
+   		</div>
+   	</section> <!-- Info Section End-->
+
+   <!-- Java Script
+   	================================================== -->
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   	<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+
+   	<script>
+   		$(document).ready(function() {
+   			var dt = new Date();
+   			var time = dt.getDate() + "/" + (dt.getMonth() + 1) + "/" + dt.getFullYear() + " " + dt.getHours() + ":" + dt.getMinutes();
+   			$("span#date").html(time);
+
+   			$('input:checkbox').change(function() {
+   				var id = $(this).attr('id');
+				if($(this).is(":checked")) {	// ON	
+					
+					switch (id) {
+						case 'g1el1':
+						var img = $(this).parent().parent().next().find('img').attr('src', 'assets/images/lamp/lamp.png');
+						var range = $(this).parent().next().find('input').val();
+						img.css('boxShadow', '0 0 ' + range +'px yellow');					
+						img.css('borderRadius', '100px');					
+						img.css('backgroundColor', 'rgba(255,255,0, 0.2)');					
+						//alert( range );
+						break;
+						case 'g1el2':
+						/*var img = $(this).parent().parent().next().find('img').attr('src', 'assets/images/lamp/lamp.png');
+						var range = $(this).parent().next().find('input').val();
+						img.css('boxShadow', '0 0 ' + range +'px yellow');
+						img.css('borderRadius', '100px');	
+						img.css('backgroundColor', 'rgba(255,255,0, 0.2)');	*/
+						//alert( range );
+						break;
+						case 'g1el3':
+						var img = $(this).parent().parent().next().find('img').attr('src', 'assets/images/lamp/lamp.png');
+						$("#p1el1, #p1el2-22").attr('src', 'assets/images/lamp/lamp.png');
+						$("#g1el1 , #g1el2").prop('checked', true);
+						var range = $(this).parent().next().find('input').val();
+						$("#g1el1r , #g1el2r").val( range );
+						img.css('boxShadow', '0 0 ' + range +'px yellow');
+						$("#p1el1, #p1el2-22").css('boxShadow', '0 0 ' + range +'px yellow');
+						$("#p1el1, #p1el2-22").css('borderRadius', '100px');
+						img.css('borderRadius', '100px');	
+						img.css('backgroundColor', 'rgba(255,255,0, 0.2)');	
+						$("#p1el1, #p1el2-22").css('backgroundColor', 'rgba(255,255,0, 0.2)');	;
+						//alert( range );
+						break;
+						case 'g2el1':
+						var img = $(this).parent().parent().next().find('img').attr('src', 'assets/images/lamp/lamp.png');
+						var range = $(this).parent().next().find('input').val();
+						img.css('boxShadow', '0 0 ' + range +'px yellow');
+						img.css('borderRadius', '100px');	
+						img.css('backgroundColor', 'rgba(255,255,0, 0.3)');	
+						//alert( range );
+						break;
+						case 'g2el2':
+						var img = $(this).parent().parent().next().find('img').attr('src', 'assets/images/lamp/lamp.png');
+						var range = $(this).parent().next().find('input').val();
+						img.css('boxShadow', '0 0 ' + range +'px yellow');
+						img.css('borderRadius', '100px');	
+						img.css('backgroundColor', 'rgba(255,255,0, 0.2)');	
+						//alert( range );
+						break;
+						case 'g2el3':
+						var img = $(this).parent().parent().next().find('img').attr('src', 'assets/images/lamp/lamp.png');
+						$("#p2el1, #p2el2").attr('src', 'assets/images/lamp/lamp.png');
+						$("#g2el1 , #g2el2").prop('checked', true);
+						var range = $(this).parent().next().find('input').val();
+						$("#g2el1r , #g2el2r").val( range );
+						img.css('boxShadow', '0 0 ' + range +'px yellow');
+						$("#p2el1, #p2el2").css('boxShadow', '0 0 ' + range +'px yellow');
+						$("#p2el1, #p2el2").css('borderRadius', '100px');
+						img.css('borderRadius', '100px');	
+						img.css('backgroundColor', 'rgba(255,255,0, 0.2)');	
+						$("#p2el1, #p2el2").css('backgroundColor', 'rgba(255,255,0, 0.2)');	
+						//alert( range );				
+						break;
+						case 'allgroup':
+						$("#g1el1 , #g1el2, #g1el3, #g2el1 , #g2el2, #g2el3").prop('checked', true);
+						$("#p1el1, #p1el2-22, #p1el3, #p2el1, #p2el2, #p2el3").attr('src', 'assets/images/lamp/lamp.png');
+						var range = $(this).parent().next().find('input').val();
+						$("#g1el1r , #g1el2r, #g1el3r, #g2el1r , #g2el2r, #g2el3r").val( range );
+						$("#p1el1, #p1el2-22, #p1el3, #p2el1, #p2el2, #p2el3").css('boxShadow', '0 0 ' + range +'px yellow');
+						$("#p1el1, #p1el2-22, #p1el3, #p2el1, #p2el2, #p2el3").css('borderRadius', '100px');	
+						$("#p1el1, #p1el2-22, #p1el3, #p2el1, #p2el2, #p2el3").css('backgroundColor', 'rgba(255,255,0, 0.2)');	
+						//alert( range );
+						break;
+					}
+				}
+				else 	// OFF
+				{
+					switch (id) {
+						case 'g1el1':
+						var img = $(this).parent().parent().next().find('img').attr('src', 'assets/images/lamp/lampa.png');
+						var range = $(this).parent().next().find('input').val();
+						img.css('boxShadow', '0 0 0px yellow');
+						img.css('backgroundColor', 'rgba(255,255,255)');	
+						//alert( range );
+						break;
+						case 'g1el2':
+						/* var img = $(this).parent().parent().next().find('img').attr('src', 'assets/images/lamp/lampa.png');
+						var range = $(this).parent().next().find('input').val();
+						img.css('boxShadow', '0 0 0px yellow');
+						img.css('backgroundColor', 'rgba(255,255,255)'); */
+						//alert( range );
+						break;
+						case 'g1el3':
+						var img = $(this).parent().parent().next().find('img').attr('src', 'assets/images/lamp/lampa.png');
+						$("#p1el1, #p1el2-22").attr('src', 'assets/images/lamp/lampa.png');
+						$("#g1el1 , #g1el2").prop('checked', false);
+						var range = $(this).parent().next().find('input').val();
+						$("#g1el1r , #g1el2r").val( range );
+						img.css('boxShadow', '0 0 0px yellow');
+						$("#p1el1, #p1el2-22").css('boxShadow', '0 0 0px yellow');
+						$("#p1el1, #p1el2-22").css('backgroundColor', 'rgba(255,255,255)');
+						img.css('backgroundColor', 'rgba(255,255,255)');
+						//alert( range );
+						break;
+						case 'g2el1':
+						var img = $(this).parent().parent().next().find('img').attr('src', 'assets/images/lamp/lampa.png');
+						var range = $(this).parent().next().find('input').val();
+						img.css('boxShadow', '0 0 0px yellow');
+						img.css('backgroundColor', 'rgba(255,255,255)');
+						//alert( range );
+						break;
+						case 'g2el2':
+						var img = $(this).parent().parent().next().find('img').attr('src', 'assets/images/lamp/lampa.png');
+						var range = $(this).parent().next().find('input').val();
+						img.css('boxShadow', '0 0 0px yellow');
+						img.css('backgroundColor', 'rgba(255,255,255)');
+						//alert( range );
+						break;
+						case 'g2el3':
+						var img = $(this).parent().parent().next().find('img').attr('src', 'assets/images/lamp/lampa.png');
+						$("#p2el1, #p2el2").attr('src', 'assets/images/lamp/lampa.png');
+						$("#g2el1 , #g2el2").prop('checked', false);
+						var range = $(this).parent().next().find('input').val();
+						$("#g2el1r , #g2el2r").val( range );
+						img.css('boxShadow', '0 0 0px yellow');
+						$("#p2el1, #p2el2").css('boxShadow', '0 0 0px yellow');
+						$("#p2el1, #p2el2").css('backgroundColor', 'rgba(255,255,255)');;
+						img.css('backgroundColor', 'rgba(255,255,255)');
+						//alert( range );					
+						break;
+						case 'allgroup':
+						$("#g1el1 , #g1el2, #g1el3, #g2el1 , #g2el2, #g2el3").prop('checked', false);
+						$("#p1el1, #p1el2-22, #p1el3, #p2el1, #p2el2, #p2el3").attr('src', 'assets/images/lamp/lampa.png');
+						var range = $(this).parent().next().find('input').val();
+						$("#g1el1r , #g1el2r, #g1el3r, #g2el1r , #g2el2r, #g2el3r").val( range );
+						$("#p1el1, #p1el2-22, #p1el3, #p2el1, #p2el2, #p2el3").css('boxShadow', '0 0 0px yellow');
+						$("#p1el1, #p1el2-22, #p1el3, #p2el1, #p2el2, #p2el3").css('backgroundColor', 'rgba(255,255,255)');
+						//alert( range );
+						break;
+					}
+				}
+			});
+});
+</script>
+</body>
+</html>
